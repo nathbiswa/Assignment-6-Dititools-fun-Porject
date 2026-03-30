@@ -1,5 +1,6 @@
 
 import './App.css'
+import DigitalTool from './Components/DigitalTool/DigitalTool'
 import Footer from './Components/Footer/Footer'
 import GetStart from './Components/GetStart/GetStart'
 import Hero from './Components/Hero/Hero'
@@ -15,6 +16,7 @@ function App() {
      <Navbar />
      <Hero />
      <User />
+     <DigitalTool />
      <GetStart />
      <Pricing />
      <Trail />
