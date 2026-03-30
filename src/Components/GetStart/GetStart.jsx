@@ -1,6 +1,8 @@
 import React from "react";
 import userImg from "../../assets/user.png";
 import choosePoducts from "../../assets/package.png";
+import startCreating from "../../assets/rocket.png";
+
 const GetStart = () => {
   return (
     <div className="container mx-auto p-12">
@@ -55,7 +57,7 @@ const GetStart = () => {
             03
           </div>
           <div className="flex justify-center p-10">
-            <img src={userImg} alt="User" className=" p-4 rounded-full bg-gray-200" />
+            <img src={startCreating} alt="Start Creating" className=" p-4 rounded-full bg-gray-200" />
           </div>
           <div className="text-center space-y-3">
             <h1 className="text-2xl font-bold">Start Creating</h1>

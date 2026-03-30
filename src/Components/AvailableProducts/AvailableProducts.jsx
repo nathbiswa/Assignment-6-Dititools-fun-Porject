@@ -3,18 +3,42 @@ import React from "react";
 const AvailableProducts = ({ Products }) => {
   console.log(Products);
   return (
-    <div className="conatainer mx-auto grid md:grid-cols-3 gap-3">
+    <div className="conatainer mx-auto grid md:grid-cols-3 gap-3 py-10">
       {Products.map((product) => {
         return (
           <div>
             <div className="card w-96 bg-base-100 shadow-sm">
-              <div className="card-body">
-                <span className={`badge badge-xs ${product.tag === "popular" ? "badge-primary" : product.tag === "best seller" ? "badge-success" : product.tag === "new" ? "badge-secondary" : ""} mb-2`}>
-                 {product.tag}
-                </span>
+              <div className="card-body ">
+                <div className="flex items-center justify-between relative gap-2 mb-8">
+                  <div>
+                    <div className="icon">
+                      <img
+                        src={product.icon}
+                        alt=""
+                        className="p-4 bg-gray-400 rounded-full"
+                      />
+                    </div>
+                  </div>
+                  <span
+                    className={`absolute -top-[20px] -right-[10px] p-4 rounded-full text-[1rem]  badge badge-xs ${
+                      product.tag === "popular"
+                        ? "bg-[#E1E7FF] text-[#4F39F6]"
+                        : product.tag === "best seller"
+                          ? " bg-[#FEF3C6] text-[#BB4D00]"
+                          : product.tag === "new"
+                            ? "bg-[#E0F8F2] text-[#007A5B]"
+                            : ""
+                    } `}
+                  >
+                    {product.tag}
+                  </span>
+                </div>
+
                 <div className="flex justify-between">
-                  <h2 className="text-3xl font-bold">Premium</h2>
-                  <span className="text-xl">$29/mo</span>
+                  <h2 className="text-2xl font-bold">{product.name}</h2>
+                  <span className="text-xl">
+                    ${product.price}/{product.period}
+                  </span>
                 </div>
                 <ul className="mt-6 flex flex-col gap-2 text-xs">
                   <li>
@@ -125,8 +149,8 @@ const AvailableProducts = ({ Products }) => {
                   </li>
                 </ul>
                 <div className="mt-6">
-                  <button className="btn btn-primary btn-block">
-                    Subscribe
+                  <button className="text-white rounded-full btn bg-gradient-to-r from-blue-500 to-purple-600 btn-block">
+                    Buy Now
                   </button>
                 </div>
               </div>
