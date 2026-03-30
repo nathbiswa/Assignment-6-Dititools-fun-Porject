@@ -1,10 +1,15 @@
 import React, { use, useState } from "react";
 import AvailableProducts from "../AvailableProducts/AvailableProducts";
+import AddCard from "../AddCard/AddCard";
 
-const DigitalTool = ({dataPromise}) => {
+const DigitalTool = ({
+  dataPromise,
+  setAvailableProducts,
+  availableProducts,
+}) => {
   const [isSelected, setIsSelected] = useState("products");
   const Products = use(dataPromise);
-  console.log(Products);
+  // console.log(Products);
   return (
     <div className="container mx-auto py-14">
       <div className="text-center">
@@ -26,11 +31,18 @@ const DigitalTool = ({dataPromise}) => {
           onClick={() => setIsSelected("addtocart")}
           className={`${isSelected === "addtocart" ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white" : ""} btn rounded-full`}
         >
-          Cart(0)
+          Cart({availableProducts.length})
         </button>
       </div>
       <div>
-        <AvailableProducts Products={Products} />
+        {isSelected === "products" && (
+          <AvailableProducts
+            Products={Products}
+            setAvailableProducts={setAvailableProducts}
+            availableProducts={availableProducts}
+          />
+        )}
+        {isSelected === "addtocart" && <AddCard setAvailableProducts={setAvailableProducts} availableProducts={availableProducts} />}
       </div>
     </div>
   );

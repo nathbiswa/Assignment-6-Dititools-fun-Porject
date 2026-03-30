@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react';
+import { Suspense, use, useState } from 'react';
 import './App.css';
 import DigitalTool from './Components/DigitalTool/DigitalTool';
 import Footer from './Components/Footer/Footer';
@@ -18,13 +18,14 @@ const dataFetching= async()=>{
 
 function App() {
  const dataPromise= dataFetching();
+ const [availableProducts, setAvailableProducts] = useState([]);
   return (
     <>
-     <Navbar />
+     <Navbar setAvailableProducts={setAvailableProducts} availableProducts={availableProducts} />
      <Hero />
      <User />
      <Suspense fallback={<div className='text-center text-2xl font-bold'>Loading...</div>}>
-      <DigitalTool dataPromise={dataPromise} />
+      <DigitalTool dataPromise={dataPromise} setAvailableProducts={setAvailableProducts} availableProducts={availableProducts} />
      </Suspense>
      <GetStart />
      <Pricing />

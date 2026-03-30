@@ -1,7 +1,7 @@
 import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
 
-const Navbar = () => {
+const Navbar = ({ setAvailableProducts, availableProducts }) => {
   return (
     <div className="border-b-2 border-b-gray-200">
       <div className="container mx-auto py-2">
@@ -32,7 +32,12 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end flex items-center gap-4">
-            <div><CiShoppingCart className="w-6 h-6"/></div>
+            <div>
+              <CiShoppingCart className="w-6 h-6 relative" />
+              <span className="absolute top-1 right-[200px] bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
+                {availableProducts.length}
+              </span>
+            </div>
             <p className="text-xl font-semibold">Login</p>
             <a className="btn bg-gradient-to-r from-blue-500 to-purple-600 text-white">
               Get Started
@@ -40,7 +45,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };
