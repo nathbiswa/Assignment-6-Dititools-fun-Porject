@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Advanced AI-powered writing tool for blogs, emails, and marketing copy.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "AI content generation",
+      "Grammar & tone correction",
+      "Blog post templates",
+      "SEO suggestions",
+      "Export to DOC & PDF"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/128/19037/19037564.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "Collection of modern templates for web, social media, and presentations.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best-seller",
+    "features": [
+      "500+ design templates",
+      "Editable Figma files",
+      "Canva compatible",
+      "Commercial license",
+      "Regular updates"
+    ],
+    "icon": "https://img.icons8.com/fluency/96/design.png"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "High-quality images, videos, and icons for creative projects.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "10,000+ stock images",
+      "HD video clips",
+      "SVG icons library",
+      "Royalty-free license",
+      "Unlimited downloads"
+    ],
+    "icon": "https://img.icons8.com/fluency/96/image.png"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and workflows for productivity.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Task automation builder",
+      "100+ automation templates",
+      "Zapier integration",
+      "Workflow analytics",
+      "Cloud sync"
+    ],
+    "icon": "https://img.icons8.com/fluency/96/automation.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with ATS-friendly templates.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ resume templates",
+      "ATS optimization",
+      "Cover letter builder",
+      "Export to PDF",
+      "Real-time editing"
+    ],
+    "icon": "https://img.icons8.com/fluency/96/resume.png"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Ready-to-use social media content templates and graphics.",
+    "price": 22,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best-seller",
+    "features": [
+      "Instagram post templates",
+      "Story templates",
+      "Editable Canva files",
+      "Content calendar",
+      "Marketing captions"
+    ],
+    "icon": "https://img.icons8.com/fluency/96/social-media.png"
+  },
+  {
+    "id": 7,
+    "name": "Website UI Kit",
+    "description": "Modern UI components and layouts for building websites quickly.",
+    "price": 35,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "300+ UI components",
+      "Figma design system",
+      "Responsive layouts",
+      "Dark & light themes",
+      "Developer-ready assets"
+    ],
+    "icon": "https://img.icons8.com/fluency/96/web-design.png"
+  },
+  {
+    "id": 8,
+    "name": "Email Marketing Toolkit",
+    "description": "Tools and templates for professional email campaigns.",
+    "price": 18,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Email templates",
+      "Drag & drop editor",
+      "Automation sequences",
+      "Analytics dashboard",
+      "Subscriber management"
+    ],
+    "icon": "https://img.icons8.com/fluency/96/new-post.png"
+  },
+  {
+    "id": 9,
+    "name": "Video Editing Preset Pack",
+    "description": "Professional LUTs and presets for cinematic video editing.",
+    "price": 27,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best-seller",
+    "features": [
+      "50+ color grading LUTs",
+      "Premiere Pro presets",
+      "Final Cut support",
+      "Easy installation",
+      "4K ready"
+    ],
+    "icon": "https://img.icons8.com/fluency/96/video-editing.png"
+  },
+  {
+    "id": 10,
+    "name": "Developer Productivity Suite",
+    "description": "Essential digital tools for developers to improve workflow.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Code snippet library",
+      "Project templates",
+      "Git workflow tools",
+      "Task management",
+      "Cloud backup"
+    ],
+    "icon": "https://img.icons8.com/fluency/96/source-code.png"
+  }
+]

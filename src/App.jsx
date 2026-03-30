@@ -1,22 +1,31 @@
 
-import './App.css'
-import DigitalTool from './Components/DigitalTool/DigitalTool'
-import Footer from './Components/Footer/Footer'
-import GetStart from './Components/GetStart/GetStart'
-import Hero from './Components/Hero/Hero'
-import Navbar from './Components/Navebar/Navbar'
-import Pricing from './Components/Pricing/Pricing'
-import Trail from './Components/Trail/Trail'
-import User from './Components/User/User'
+import { Suspense } from 'react';
+import './App.css';
+import DigitalTool from './Components/DigitalTool/DigitalTool';
+import Footer from './Components/Footer/Footer';
+import GetStart from './Components/GetStart/GetStart';
+import Hero from './Components/Hero/Hero';
+import Navbar from './Components/Navebar/Navbar';
+import Pricing from './Components/Pricing/Pricing';
+import Trail from './Components/Trail/Trail';
+import User from './Components/User/User';
+
+
+const dataFetching= async()=>{
+  const res = await fetch("/data.json");
+  return res.json();
+}
 
 function App() {
- 
+ const dataPromise= dataFetching();
   return (
     <>
      <Navbar />
      <Hero />
      <User />
-     <DigitalTool />
+     <Suspense fallback={<div className='text-center text-2xl font-bold'>Loading...</div>}>
+      <DigitalTool dataPromise={dataPromise} />
+     </Suspense>
      <GetStart />
      <Pricing />
      <Trail />

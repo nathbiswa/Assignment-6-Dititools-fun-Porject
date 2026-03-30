@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
           <div className="flex-1 space-y-4">
             <ul className="space-y-2">
-                <h1 className="font-bold text-2xl">Product</h1>
+              <h1 className="font-bold text-2xl">Product</h1>
               <li>Features</li>
               <li>Pricing</li>
               <li>Templates</li>
@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
           <div className="flex-1 space-y-4">
             <ul className="space-y-2">
-                <h1 className="font-bold text-2xl">Company</h1>
+              <h1 className="font-bold text-2xl">Company</h1>
               <li>About</li>
               <li>Careers</li>
               <li>Press</li>
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
           <div className="flex-1 space-y-4">
             <ul className="space-y-2">
-                <h1 className="font-bold text-2xl">Resources</h1>
+              <h1 className="font-bold text-2xl">Resources</h1>
               <li>Documentation</li>
               <li>Help Center</li>
               <li>Community</li>
@@ -42,28 +42,36 @@ const Footer = () => {
             </ul>
           </div>
           <div className="flex-1 relative space-y-4">
-            <h1 className="font-bold text-2xl absolute -top-17">Social Links</h1>
+            <h1 className="font-bold text-2xl absolute -top-17">
+              Social Links
+            </h1>
             <ul className="flex items-center gap-2">
-              <li><CiYoutube /></li>
-              <li><FaFacebook /></li>
-              <li><FaInstagram /></li>
+              <li>
+                <CiYoutube />
+              </li>
+              <li>
+                <FaFacebook />
+              </li>
+              <li>
+                <FaInstagram />
+              </li>
             </ul>
           </div>
-          
         </div>
 
-       <div className="border-b border-gray-600 mt-10 mb-3"></div>
-
-        <p className="flex justify-between items-c text-gray-400 text-center">
-          <span>&copy; 2026 Digitools. All rights reserved.</span>
-          <span>
-            <ul className="flex gap-4 items-center">
-              <li>Privacy Policy</li>
-              <li>Terms of Service</li>
-              <li>Cookies</li>
-            </ul>
-          </span>
-        </p>
+        <div className="border-b border-gray-600 mt-10 mb-3"></div>
+        <div>
+          <div className="flex justify-between items-c text-gray-400 text-center">
+            <span>&copy; 2026 Digitools. All rights reserved.</span>
+            <span>
+              <ul className="flex gap-4 items-center">
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Cookies</li>
+              </ul>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );

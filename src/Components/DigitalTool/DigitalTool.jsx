@@ -1,19 +1,36 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
+import AvailableProducts from "../AvailableProducts/AvailableProducts";
 
-const DigitalTool = () => {
-    const [isSelected, setIsSelected] = useState(true);
+const DigitalTool = ({dataPromise}) => {
+  const [isSelected, setIsSelected] = useState("products");
+  const Products = use(dataPromise);
+  console.log(Products);
   return (
     <div className="container mx-auto py-14">
       <div className="text-center">
         <h1 className="text-4xl font-bold">Premium Digital Tools</h1>
         <p className="text-gray-600 mt-4">
           Choose from our curated collection of premium digital products
-          designed <br />to boost your productivity and creativity.
+          designed <br />
+          to boost your productivity and creativity.
         </p>
       </div>
       <div className="flex justify-center gap-4 mt-8">
-        <button className={`${isSelected === true ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white" : "bg-red-500"} btn rounded-full`}>Products</button>
-        <button className={`${isSelected === false ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white" : "bg-red-500"} btn rounded-full`}>Cart</button>
+        <button
+          onClick={() => setIsSelected("products")}
+          className={`${isSelected === "products" ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white" : ""} btn rounded-full`}
+        >
+          Products
+        </button>
+        <button
+          onClick={() => setIsSelected("addtocart")}
+          className={`${isSelected === "addtocart" ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white" : ""} btn rounded-full`}
+        >
+          Cart(0)
+        </button>
+      </div>
+      <div>
+        <AvailableProducts Products={Products} />
       </div>
     </div>
   );
