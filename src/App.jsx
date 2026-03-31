@@ -9,6 +9,7 @@ import Navbar from './Components/Navebar/Navbar';
 import Pricing from './Components/Pricing/Pricing';
 import Trail from './Components/Trail/Trail';
 import User from './Components/User/User';
+import { ToastContainer } from 'react-toastify';
 
 
 const dataFetching= async()=>{
@@ -31,7 +32,7 @@ function App() {
      <Pricing />
      <Trail />
      <Footer />
-     
+     <ToastContainer />
     </>
   )
 }

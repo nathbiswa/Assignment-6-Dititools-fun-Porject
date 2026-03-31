@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const Card = ({ product, setAvailableProducts, availableProducts }) => {
 
@@ -6,6 +7,7 @@ const Card = ({ product, setAvailableProducts, availableProducts }) => {
   const handleSelectedProduct=()=>{
     const newProduct= [...availableProducts, product];
     setAvailableProducts(newProduct);
+    toast.success("Product added to cart.");
   }
   return (
     <div>

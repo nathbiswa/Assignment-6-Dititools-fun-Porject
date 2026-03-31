@@ -1,15 +1,17 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const AddCard = ({ setAvailableProducts, availableProducts }) => {
-  console.log(availableProducts);
+//   console.log(availableProducts);
   const totalPrice = availableProducts.reduce((total, product) => total + product.price, 0);
   const paymentSuccess=()=>{
     setAvailableProducts([]);
-    alert("Payment Successful! Thank you for your purchase.");
+    toast.success("Payment Successful! Thank you for your purchase.");
   }
   const handelDeletItmes=(productToDelete)=>{
     const deletProduct= availableProducts.filter(product=> product !== productToDelete);
     setAvailableProducts(deletProduct);
+        toast.error("Product removed from cart.");
   }
   return (  
     <div className="container mx-auto py-10 shadow-2xl rounded-lg p-6 mt-6">
