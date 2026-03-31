@@ -5,10 +5,10 @@ const Trail = () => {
     <div className="bg-gradient-to-r to-blue-500 from-purple-500  py-16">
       <div className="container mx-auto py-10">
         <div className="text-center text-white">
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-[20px] lg:text-5xl font-bold">
             Ready to Transform Your Workflow?
           </h1>
-          <p className="text-lg mt-4 text-gray-400">
+          <p className="text-[14px] lg:text-lg mt-4 text-gray-400">
             Join thousands of professionals who are already using Digitools to
             work smarter. <br />
             Start your free trial today.

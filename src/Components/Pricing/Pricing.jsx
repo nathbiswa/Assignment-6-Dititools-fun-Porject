@@ -5,12 +5,12 @@ const Pricing = () => {
   return (
     <div className="container mx-auto py-10">
       <div className="text-center p-10 space-y-3">
-        <h1 className="text-5xl font-bold">Simple, Transparent Pricing</h1>
+        <h1 className="text-[20px] lg:text-5xl font-bold">Simple, Transparent Pricing</h1>
         <p className="font-semibold text-[1rem] text-gray-400">
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-4 py-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-6">
         <div className="shadow-2xs rounded-lg border border-gray-200 p-6 w-full space-y-2 bg-[#F2F2F2]">
           <div className="my-6">
             <h2 className="text-3xl font-bold">Starter</h2>

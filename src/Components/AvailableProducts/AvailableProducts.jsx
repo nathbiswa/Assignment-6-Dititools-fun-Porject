@@ -1,10 +1,14 @@
 import React from "react";
 import Card from "../Card/Card";
 
-const AvailableProducts = ({ Products,setAvailableProducts,availableProducts }) => {
+const AvailableProducts = ({
+  Products,
+  setAvailableProducts,
+  availableProducts,
+}) => {
   // console.log(Products);
   return (
-    <div className="conatainer mx-auto grid md:grid-cols-3 gap-3 py-10">
+    <div className="conatainer mx-auto grid grid-cols-1 md:grid-cols-3 gap-3 py-10">
       {Products.map((product) => {
         return (
           // <div>
@@ -75,7 +79,12 @@ const AvailableProducts = ({ Products,setAvailableProducts,availableProducts }) 
           //     </div>
           //   </div>
           // </div>
-          <Card key={product.id} product={product} setAvailableProducts={setAvailableProducts} availableProducts={availableProducts} />
+          <Card
+            key={product.id}
+            product={product}
+            setAvailableProducts={setAvailableProducts}
+            availableProducts={availableProducts}
+          />
         );
       })}
     </div>

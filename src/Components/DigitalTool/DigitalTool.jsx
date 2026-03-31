@@ -42,7 +42,12 @@ const DigitalTool = ({
             availableProducts={availableProducts}
           />
         )}
-        {isSelected === "addtocart" && <AddCard setAvailableProducts={setAvailableProducts} availableProducts={availableProducts} />}
+        {isSelected === "addtocart" && (
+          <AddCard
+            setAvailableProducts={setAvailableProducts}
+            availableProducts={availableProducts}
+          />
+        )}
       </div>
     </div>
   );

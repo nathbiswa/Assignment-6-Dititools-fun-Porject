@@ -1,45 +1,45 @@
 import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
 
-const Navbar = ({ setAvailableProducts, availableProducts }) => {
+const Navbar = ({ availableProducts }) => {
   return (
     <div className="border-b-2 border-b-gray-200">
       <div className="container mx-auto py-2">
         <div className="navbar bg-base-100">
           <div className="navbar-start">
-            <a className=" font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent text-4xl">
+            <a className=" mr-2 font-semibold lg:font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent lg:text-4xl">
               DigiTools
             </a>
           </div>
 
           <div className="navbar-center lg:flex">
-            <ul className="flex justify-center items-center gap-5 text-[20px]">
+            <ul className="flex justify-center items-center gap-5 text-[10px] lg:text-[20px]">
               <li>
-                <a href="">Products</a>
+                <a href="#">Products</a>
               </li>
               <li>
-                <a href="">Features</a>
+                <a href="#">Features</a>
               </li>
               <li>
-                <a href="">Pricing</a>
+                <a href="#">Pricing</a>
               </li>
               <li>
-                <a href="">Testimonials</a>
+                <a href="#">Testimonials</a>
               </li>
               <li>
-                <a href="">FAQ</a>
+                <a href="#">FAQ</a>
               </li>
             </ul>
           </div>
           <div className="navbar-end flex items-center gap-4">
             <div>
               <CiShoppingCart className="w-6 h-6 relative" />
-              <span className="absolute top-1 right-[200px] bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
+              <span className="absolute top-1 right-[50px] lg:top-1 lg:right-[200px] bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
                 {availableProducts.length}
               </span>
             </div>
-            <p className="text-xl font-semibold">Login</p>
-            <a className="btn bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+            <p className="text-[10px] lg:text-xl font-semibold">Login</p>
+            <a className="hidden lg:block btn bg-gradient-to-r from-blue-500 to-purple-600 text-white">
               Get Started
             </a>
           </div>

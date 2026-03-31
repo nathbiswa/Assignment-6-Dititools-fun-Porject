@@ -1,18 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { toast } from "react-toastify";
 
 const Card = ({ product, setAvailableProducts, availableProducts }) => {
 
 
-  const handleSelectedProduct=()=>{
+  const handleSelectedProduct=(e)=>{
+
+    const isfind= availableProducts.find(p=> p.name === product.name);
+    if(isfind){
+      toast.error("Product already in cart.");
+      return;
+    }
+    e.preventDefault();
     const newProduct= [...availableProducts, product];
     setAvailableProducts(newProduct);
     toast.success("Product added to cart.");
+      setAddProduct(true);
+
   }
+
+  const [addProduct, setAddProduct] = useState(false);
+
   return (
     <div>
       <div>
-        <div className="card w-96 bg-base-100 shadow-sm">
+        <div className="card  bg-base-100 shadow-sm">
           <div className="card-body ">
             <div className="flex items-center justify-between relative gap-2 mb-8">
               <div>
@@ -75,8 +87,9 @@ const Card = ({ product, setAvailableProducts, availableProducts }) => {
               })}
             </ul>
             <div className="mt-6">
-              <button onClick={()=> handleSelectedProduct()} className="text-white rounded-full btn bg-gradient-to-r from-blue-500 to-purple-600 btn-block">
-                Buy Now
+              <button type="button" onClick={(e)=> handleSelectedProduct(e)} className={`text-white 
+              rounded-full btn ${addProduct ? "bg-gradient-to-r from-green-500 to-green-600" : "bg-gradient-to-r from-blue-500 to-purple-600"} btn-block`}>
+                {addProduct ? "Added to Cart" : "Buy Now"}
               </button>
             </div>
           </div>

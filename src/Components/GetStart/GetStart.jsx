@@ -7,14 +7,14 @@ const GetStart = () => {
   return (
     <div className="container mx-auto p-12">
       <div className="text-center py-12">
-        <h2 className="text-3xl font-bold mb-4">Get Started in 3 Steps</h2>
-        <p className="text-[1rem] text-gray-600 mb-6">
+        <h2 className="text-[20px] lg:text-3xl font-bold mb-4">Get Started in 3 Steps</h2>
+        <p className="text-[12px] lg:text-[1rem] text-gray-600 mb-6">
           Start using premium digital tools in minutes, not hours.
         </p>
       </div>
       
-      <div className="flex justify-between items-center gap-4 mt-10 py-8">
-        <div className=" relative p-4 shadow-lg">
+      <div className="grid grid-cols-1 md:grid-cols-3 justify-between items-center gap-4 mt-10 py-8">
+        <div className=" w-full relative p-4 shadow-lg">
           <div
             className="w-9 h-9 rounded-full bg-gradient-to-r from-blue-500
              to-purple-600 absolute flex items-center justify-center font-bold text-white top-[-30px] right-[0px]"

@@ -5,18 +5,18 @@ import heroImg from "../../assets/banner.png";
 const Hero = () => {
   return (
     <div className="container mx-auto">
-      <div className="hero flex items-center justify-between mt-10 gap-2">
+      <div className="hero flex sm:flex-col-reverse flex-col md:flex-row items-center   justify-between mt-10 gap-2">
         <div className="hero-left flex-1">
           <div className="flex justify-center items-center gap-4 bg-[#E1E7FF] px-4 py-2 rounded-full w-max mb-6">
             <div className="w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-600"></div>
             <div>
-              <h2 className="text-1xl bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+              <h2 className="text-[12px] lg:text-1xl bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
                 New: AI-Powered Tools Available
               </h2>
             </div>
           </div>
           <div>
-            <h1 className="text-7xl font-bold mb-6">
+            <h1 className="text-[24px] lg:text-7xl font-bold mb-6">
               Supercharge Your
               <br />
               Digital Workflow

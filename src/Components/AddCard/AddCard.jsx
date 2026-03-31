@@ -1,13 +1,33 @@
 import React from "react";
+import { LuShoppingCart } from "react-icons/lu";
 import { toast } from "react-toastify";
 
-const AddCard = ({ setAvailableProducts, availableProducts }) => {
+const AddCard = ({setAvailableProducts, availableProducts }) => {
 //   console.log(availableProducts);
   const totalPrice = availableProducts.reduce((total, product) => total + product.price, 0);
   const paymentSuccess=()=>{
     setAvailableProducts([]);
     toast.success("Payment Successful! Thank you for your purchase.");
   }
+
+  
+
+  const isCartEmpty = availableProducts.length === 0;
+  if (isCartEmpty) {
+    return (    
+      <div className="container mx-auto py-10 shadow-2xl rounded-lg p-6 mt-6">
+        <h2 className="text-3xl font-bold">Your Cart</h2>
+        <div className="text-center">
+          <div className="w-[100px] h-[100px] mx-auto">
+            <LuShoppingCart className="text-6xl text-gray-400 mt-10 " />
+          </div>
+          <p className="text-gray-500 text-xl mt-4">Your cart is empty</p>
+        </div>
+      </div>
+    );
+  }
+
+
   const handelDeletItmes=(productToDelete)=>{
     const deletProduct= availableProducts.filter(product=> product !== productToDelete);
     setAvailableProducts(deletProduct);
@@ -16,15 +36,15 @@ const AddCard = ({ setAvailableProducts, availableProducts }) => {
   return (  
     <div className="container mx-auto py-10 shadow-2xl rounded-lg p-6 mt-6">
       <h2 className="text-3xl font-bold">Your Cart</h2>
-      <div className="p-3  rounded-md mt-5 space-y-4">
+      <div className="p-3  rounded-md mt-5 space-y-3">
         {availableProducts.map((product, index) => (
           <div key={index}>
-            <div className="bg-gray-200 rounded-2xl p-4 flex justify-between items-center">
+            <div className="bg-gray-200 rounded-2xl p-2 flex justify-between items-center">
               <div className="flex items-center gap-3">
                 <img
                   src={product.icon}
                   alt=""
-                  className="w-20 p-6 rounded-full bg-gray-400"
+                  className="w-16 p-2 rounded-full bg-gray-400"
                 />
                 <div className="text-xl font-bold space-y-2">
                   <h1>{product.name}</h1>
