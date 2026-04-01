@@ -34,12 +34,15 @@ const Navbar = ({ availableProducts }) => {
           <div className="navbar-end flex items-center gap-4">
             <div>
               <CiShoppingCart className="w-6 h-6 relative" />
-              <span className="absolute top-1 right-[50px] lg:top-1 lg:right-[200px] bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
-                {availableProducts.length}
-              </span>
+              {availableProducts.length > 0 && (
+                <span className="absolute top-1 right-[0px] lg:top-1 lg:right-[200px]
+                 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
+                  {availableProducts.length}
+                </span>
+              )}
             </div>
-            <p className="text-[10px] lg:text-xl font-semibold">Login</p>
-            <a className="hidden lg:block btn bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+            <p className="text-[10px] md:text-xl font-semibold">Login</p>
+            <a className="hidden  lg:block btn bg-gradient-to-r from-blue-500 to-purple-600 text-white">
               Get Started
             </a>
           </div>
