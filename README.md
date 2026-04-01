@@ -1,16 +1,23 @@
-# React + Vite
+# DigiTool Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## My Project Name: digital-tool-application-fun
 
-Currently, two official plugins are available:
+# Description
+    -Through the DigitalTool project, various necessary AI tools can be purchased and worked on.
+    
+# Technoly:
+    - Tailwindcss, DaisyUi, Vite, toastfy
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# 3 Feature on my project:
+## 1. Several Digital Tools in One Location
 
-## React Compiler
+- From a single application, users can access a variety of helpful digital tools. The platform offers a number of features to make chores quicker and easier rather than requiring users to visit many websites.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 2. An easy-to-use interface
 
-## Expanding the ESLint configuration
+- Users may access and utilize the features with ease thanks to the application's clear and uncomplicated layout. This enhances usability for both novice and experienced users.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 3. Quick and Engaging Experience
+
+- With its interactive features, the app offers a seamless and speedy experience that enables users to use digital tools quickly and obtain results right away.
+

@@ -5,7 +5,9 @@ const Pricing = () => {
   return (
     <div className="container mx-auto py-10">
       <div className="text-center p-10 space-y-3">
-        <h1 className="text-[20px] lg:text-5xl font-bold">Simple, Transparent Pricing</h1>
+        <h1 className="text-[20px] lg:text-5xl font-bold">
+          Simple, Transparent Pricing
+        </h1>
         <p className="font-semibold text-[1rem] text-gray-400">
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
@@ -49,8 +51,11 @@ const Pricing = () => {
         </div>
         <div
           className="shadow-2xs rounded-lg border border-gray-200 p-6 w-full space-y-2 
-        bg-gradient-to-r from-blue-400 to-purple-600 text-white"
+        bg-gradient-to-r from-blue-400 to-purple-600 text-white relative"
         >
+          <div className="text-center -top-[15px] right-1 absoluted p-2 w-[130px] h-[30px] rounded-full bg-[#FEF3C6] ">
+            <h2 className="text-[12px] font-semibold text-[#BB4D00]">Most Populer</h2>
+          </div>
           <div className="my-6">
             <h2 className="text-3xl font-bold">Pro</h2>
             <p className="text-[1rem] text-white">Best for professionals</p>
@@ -66,34 +71,33 @@ const Pricing = () => {
             </li>
             <li className="flex items-center gap-1">
               <IoIosCheckmark className="text-white font-bold text-2xl" />
-             Unlimited templates
+              Unlimited templates
             </li>
             <li className="flex items-center gap-1">
               <IoIosCheckmark className="text-white font-bold text-2xl" />
               Priority support
             </li>
             <li className="flex items-center gap-1">
-              <IoIosCheckmark className="text-white font-bold text-2xl" /> 
+              <IoIosCheckmark className="text-white font-bold text-2xl" />
               Unlimited projects
             </li>
             <li className="flex items-center gap-1">
-              <IoIosCheckmark className="text-white font-bold text-2xl" /> 
+              <IoIosCheckmark className="text-white font-bold text-2xl" />
               Cloud sync
             </li>
             <li className="flex items-center gap-1">
-              <IoIosCheckmark className="text-white font-bold text-2xl" /> 
-            Advanced analytics
+              <IoIosCheckmark className="text-white font-bold text-2xl" />
+              Advanced analytics
             </li>
           </ul>
           <button className="bg-white w-full flex items-center justify-center rounded-full mt-6 py-2">
             <div
-            className="w-full bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent rounded-full  
+              className="w-full bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent rounded-full  
            "
-          >
-           Start Pro Trial
-          </div> 
+            >
+              Start Pro Trial
+            </div>
           </button>
-         
         </div>
         <div className="shadow-2xs rounded-lg border border-gray-200 p-6 w-full space-y-2 bg-[#F2F2F2]">
           <div className="my-6">
@@ -109,7 +113,7 @@ const Pricing = () => {
           <ul>
             <li className="flex items-center gap-1">
               <IoIosCheckmark className="text-green-500 font-bold text-2xl" />
-             Everything in Pro
+              Everything in Pro
             </li>
             <li className="flex items-center gap-1">
               <IoIosCheckmark className="text-green-500 font-bold text-2xl" />
@@ -117,26 +121,26 @@ const Pricing = () => {
             </li>
             <li className="flex items-center gap-1">
               <IoIosCheckmark className="text-green-500 font-bold text-2xl" />
-            Custom integrations
+              Custom integrations
             </li>
             <li className="flex items-center gap-1">
-              <IoIosCheckmark className="text-green-500 font-bold text-2xl" /> 
-             Dedicated support
+              <IoIosCheckmark className="text-green-500 font-bold text-2xl" />
+              Dedicated support
             </li>
             <li className="flex items-center gap-1">
-              <IoIosCheckmark className="text-green-500 font-bold text-2xl" /> 
-             SLA guarantee
+              <IoIosCheckmark className="text-green-500 font-bold text-2xl" />
+              SLA guarantee
             </li>
             <li className="flex items-center gap-1">
-              <IoIosCheckmark className="text-green-500 font-bold text-2xl" /> 
-             Custom branding
+              <IoIosCheckmark className="text-green-500 font-bold text-2xl" />
+              Custom branding
             </li>
           </ul>
           <button
             className="w-full bg-gradient-to-r from-blue-400 to-purple-600 text-white py-2 rounded-full 
           mt-6 hover:bg-blue-600 transition duration-300"
           >
-           Contact Sales
+            Contact Sales
           </button>
         </div>
       </div>
