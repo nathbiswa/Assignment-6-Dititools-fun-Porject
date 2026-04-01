@@ -42,9 +42,9 @@ const Navbar = ({ availableProducts }) => {
               )}
             </div>
             <p className="text-[10px] md:text-xl font-semibold">Login</p>
-            <a className="hidden  lg:block btn bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+            <button className="flex justify-center items-center hidden  md:block btn bg-gradient-to-r from-blue-500 to-purple-600 text-white">
               Get Started
-            </a>
+            </button>
           </div>
         </div>
       </div>

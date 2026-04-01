@@ -151,22 +151,5 @@
       "4K ready"
     ],
     "icon": "https://i.ibb.co.com/fYXCvjN3/operation.png"
-  },
-  {
-    "id": 10,
-    "name": "Developer Productivity Suite",
-    "description": "Essential digital tools for developers to improve workflow.",
-    "price": 49,
-    "period": "yearly",
-    "tag": "popular",
-    "tagType": "popular",
-    "features": [
-      "Code snippet library",
-      "Project templates",
-      "Git workflow tools",
-      "Task management",
-      "Cloud backup"
-    ],
-    "icon": "https://i.ibb.co.com/xxDjFXF/writing-2327400-1.png"
   }
 ]

@@ -10,7 +10,7 @@ const User = () => {
                 </div>
                 <div className='border-r-2'></div>
                 <div className='space-y-2'>
-                    <h1 className='text-[20px] md:text-5xl font-bold'>200++</h1>
+                    <h1 className='text-[20px] md:text-5xl font-bold'>200+</h1>
                     <span className='font-semibold'>Premium Tools</span>
                 </div>
                 <div className='border-r-2'></div>
